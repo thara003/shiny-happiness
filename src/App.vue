@@ -13,10 +13,9 @@ export default defineComponent({
 </script>
 
 <template>
+  <div class = "justify-center items-center box-border w-[32rem] p-4 rounded-lg bg-white shadow-md">
   <demo />
-  <h1 class="text-4xl text-red-300 font-bold underline">
-    Hello world!
-  </h1>
+</div>
 </template>
 
 <style scoped>

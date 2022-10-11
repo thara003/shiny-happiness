@@ -1,6 +1,6 @@
 <script>
 import { defineComponent } from "vue";
-import Demo from "./Demo.vue";
+import Demo from "./Notification.vue";
 
 export default defineComponent({
   components: {

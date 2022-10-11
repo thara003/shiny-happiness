@@ -10,7 +10,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class = "justify-center items-center box-border w-[32rem] p-4 rounded-lg bg-white shadow-md">
+  <div class = "justify-center items-center box-border w-[32rem] rounded-lg bg-white shadow-md">
   <demo />
 </div>
 </template>

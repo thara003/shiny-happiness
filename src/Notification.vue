@@ -13,7 +13,7 @@
                 </span>
                 <span class="ml-1 text-s font-semibold rounded px-2 py-0.5" :class="[activeKey === '1' ? 'bg-black text-white' : 'bg-slate-200 text-slate-400']">8</span>
             </template>
-            Content of Tab Pane 1
+            <Body />
         </a-tab-pane>
         <a-tab-pane key="2"><template #tab>
                 <span class="text-slate-500" :class="[activeKey === '2' ? 'selected-tab' : '']">
@@ -59,11 +59,13 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
 import { SettingOutlined } from '@ant-design/icons-vue';
+import Body from './components/Body.vue';
 
 export default defineComponent({
     components: {
-        SettingOutlined,
-    },
+    SettingOutlined,
+    Body
+},
     setup() {
         return {
             activeKey: ref('1'),

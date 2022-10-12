@@ -2,13 +2,12 @@
     <div class="flex mt-5 mb-1 m-2 pt-6 p-3">
         <h2 class="w-2/3 text-2xl font-extrabold ">Notifications</h2>
         <div class="w-1/3 flex justify-end items-centre">
-            <a class="text-black font-semibold underline">Mark all as read</a>
-
+            <a class="text-black font-semibold underline mt-1">Mark all as read</a>
         </div>
     </div>
     <a-tabs v-model:activeKey="activeKey" class="w-full text-black">
         <a-tab-pane key="1"><template #tab>
-                <span class="text-slate-500 m-2 pl-3 text-s" :class="[activeKey === '1' ? 'selected-tab' : '']">
+                <span class="text-slate-500 ml-5" :class="[activeKey === '1' ? 'selected-tab' : '']">
                     All 
                 </span>
                 <span class="ml-1 text-s font-semibold rounded px-2 py-0.5" :class="[activeKey === '1' ? 'bg-black text-white' : 'bg-slate-200 text-slate-400']">8</span>

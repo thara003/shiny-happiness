@@ -1,20 +1,29 @@
 <template>
   <div class="flex ">
-    <a-avatar shape="square" size="large" class="rounded-lg">
+    <!-- <a-avatar shape="square" size="large" class="rounded-lg">
       <template #icon>
         <UserOutlined />
       </template>
-    </a-avatar>
+    </a-avatar> -->
+    <div class="inline-flex w-10 h-11 relative">
+      <img class='w-10 h-11 object-cover rounded-xl' alt='User avatar'
+        :src="src">
+      <span v-if="status"
+      :class="[status === 'active' ? 'bg-green-500 ' : 'bg-red-500']"
+        class="inline-flex w-3 h-3 absolute right-0 bottom-0 rounded-full ring-2 ring-white transform translate-x-1/3 translate-y-1/3"></span>
+
+    </div>
     <div class="px-3">
       <span class="text-base"> <strong>{{strong1}} </strong>{{text}}<strong>{{strong2}}</strong></span>
-      <span class="flex text-slate-500">{{timeago}}<li class="h-1 w-1 rounded-full bg-slate-400 mt-2 mx-1" v-if="listitem"></li>
+      <span class="flex text-slate-500">{{timeago}}<li class="h-1 w-1 rounded-full bg-slate-400 mt-2 mx-1"
+          v-if="listitem"></li>
         {{listitem}}</span>
-        <Button text ="Accept" color="black" v-if="button"/>
-        <Button text ="Decline" v-if="button"/>
-        <div>
-          <UploadMess v-if="upload"/>
-          <StrikeMess v-if="strike"/>
-        </div>
+      <Button text="Accept" color="black" v-if="button" />
+      <Button text="Decline" v-if="button" />
+      <div>
+        <UploadMess v-if="upload" />
+        <StrikeMess v-if="strike" />
+      </div>
     </div>
   </div>
 </template>
@@ -30,7 +39,7 @@ export default defineComponent({
     Button,
     UploadMess,
     StrikeMess
-},
+  },
   props: {
     strong1: {
       type: String,
@@ -52,18 +61,26 @@ export default defineComponent({
       type: String,
       required: false,
     },
-    button:{
+    button: {
       type: Boolean,
       required: false,
     },
-    upload:{
+    upload: {
       type: Boolean,
       required: false,
     },
-    strike:{
+    strike: {
       type: Boolean,
       required: false,
-    }
+    },
+    src: {
+      type: String,
+      required: true,
+    },
+    status: {
+      type: String,
+      required: false,
+    },
   },
 });
 </script>

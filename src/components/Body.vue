@@ -3,7 +3,7 @@
         <div v-for="message in messages" v-bind:key="message.id">
             <Message :strong1="message.strong1" :text="message.text" :strong2="message.strong2"
                 :timeago="message.timeago" :listitem="message.listitem" :button="message.button"
-                :upload="message.upload" :strike="message.strike" />
+                :upload="message.upload" :strike="message.strike" :src="message.src" :status = "message.status"/>
             <hr class="my-3" />
         </div>
         <Skeleton />
@@ -30,6 +30,8 @@ export default defineComponent ({
                     strong2: 'Final Presentation',
                     timeago: '2h ago ',
                     listitem: 'Social Media Plan',
+                    status : 'active',
+                    src:'https://images.unsplash.com/photo-1477118476589-bff2c5c4cfbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=200',
                 },
                 {
                     id: 2,
@@ -38,6 +40,7 @@ export default defineComponent ({
                     strong2: 'Tennis List',
                     timeago: '4h ago ',
                     listitem: 'Hobby List',
+                    src: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDZ8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60',
                 },
                 {
                     id: 3,
@@ -47,6 +50,8 @@ export default defineComponent ({
                     timeago: '12h ago ',
                     listitem: 'Hobby List',
                     button: true,
+                    status : 'offline',
+                    src: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60',
                 },
                 {
                     id: 4,
@@ -55,6 +60,7 @@ export default defineComponent ({
                     strong2: '',
                     timeago: '1d ago ',
                     upload: true,
+                    src: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
                 },
                 {
                     id: 5,
@@ -64,6 +70,7 @@ export default defineComponent ({
                     timeago: '4h ago ',
                     listitem: 'Hobby List',
                     strike: true,
+                    src: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60',
                 },
                 {
                     id: 6,
@@ -73,6 +80,8 @@ export default defineComponent ({
                     timeago: '12h ago ',
                     listitem: 'Hobby List',
                     button: true,
+                    status : 'offline',
+                    src: 'https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60',
                 },
 
             ],

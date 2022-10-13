@@ -1,5 +1,5 @@
 <template>
-      <div class = "m-20 lg:mt-80  box-border w-[28rem] rounded-2xl bg-white shadow-md">
+      <div class = "m-20 lg:mt-80 box-border w-[28rem] rounded-2xl bg-white shadow-md">
     <div class="flex mx-4 m-2 pt-6 p-3">
         <h2 class="w-2/3 text-2xl font-extrabold ">Notifications</h2>
         <div class="w-1/3 flex justify-end items-centre">

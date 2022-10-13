@@ -1,5 +1,5 @@
 <template>
-  <div class="flex m-2">
+  <div class="flex ">
     <a-avatar shape="square" size="large" class="rounded-lg">
       <template #icon>
         <UserOutlined />

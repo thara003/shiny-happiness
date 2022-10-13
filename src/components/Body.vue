@@ -27,7 +27,7 @@ export default {
                 {
                     id: 2,
                     strong1: 'Jason Raddon ',
-                    text: 'mentioned you in 🥰 ',
+                    text: 'mention you in 😍 ',
                     strong2: 'Tennis List',
                     timeago: '4h ago ',
                     listitem: 'Hobby List',
@@ -63,7 +63,38 @@ export default {
                     timeago: '12h ago ',
                     listitem: 'Hobby List',
                 },
-
+                {
+                    id: 7,
+                    strong1: 'Anna Srzand ',
+                    text: 'joined to 🔥 ',
+                    strong2: 'Final Presentation',
+                    timeago: '2h ago ',
+                    listitem: 'Social Media Plan',
+                },
+                {
+                    id: 8,
+                    strong1: 'Jason Raddon ',
+                    text: 'mention you in 😍 ',
+                    strong2: 'Tennis List',
+                    timeago: '4h ago ',
+                    listitem: 'Hobby List',
+                },
+                {
+                    id: 9,
+                    strong1: 'Sandra Marx ',
+                    text: 'is requesting to upgrade plane',
+                    strong2: '',
+                    timeago: '12h ago ',
+                    listitem: 'Hobby List',
+                },
+                {
+                    id: 10,
+                    strong1: 'Adam Smith ',
+                    text: 'upload a file',
+                    strong2: '',
+                    timeago: '1d ago ',
+                },
+                
             ],
         }
     }

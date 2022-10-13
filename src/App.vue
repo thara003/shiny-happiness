@@ -1,17 +1,17 @@
 <script>
 import { defineComponent } from "vue";
-import Demo from "./Notification.vue";
+import Notification from "./Notification.vue";
 
 export default defineComponent({
   components: {
-    Demo,
-  },
+    Notification,
+},
 });
 </script>
 
 <template>
-  <div class = "justify-center items-center box-border w-[32rem] rounded-lg bg-white shadow-md">
-  <demo />
+  <div class="flex items-center  justify-center">
+  <Notification />
 </div>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex">
+  <div class="flex px-6 py-3">
     <div v-show="src" class="inline-flex w-10 h-11 relative">
       <img class='w-10 h-11 object-cover rounded-xl' alt='User avatar'
         :src="src">
@@ -27,7 +27,7 @@
     </div>
   </div>
 </template>
-<style>
+<style scoped>
 .bg-color {
   background-color: #f2d1b0;
 }

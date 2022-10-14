@@ -1,17 +1,21 @@
 <template>
-    <div class="px-6 mb-8">
-        <!-- change the background if key is 1 and 2 -->
-        <div v-for="message in messages" v-bind:key="message.id">
+    <div class="mb-8">
+        <div v-for="message in messages" v-bind:key="message.id" :class="[message.id === 1 || message.id === 2 ? 'bg-color' : '']">
             <Message :strong1="message.strong1" :text="message.text" :strong2="message.strong2"
                 :timeago="message.timeago" :listitem="message.listitem" :button="message.button"
                 :upload="message.upload" :strike="message.strike" :src="message.src" :status = "message.status" :display="message.display"/>
-            <hr class="my-3" />
+            <hr class ="mx-6"/>
         </div>
-        <Skeleton />
-        <hr class="my-3" />
-        <Skeleton />
+        <Skeleton class="my-4 px-6"/>
+        <hr class="mx-6" />
+        <Skeleton class="mt-4 px-6"/>
     </div>
 </template>
+<style>
+.bg-color {
+    background-color: #fdf7f2;
+}
+</style>
 <script>
 import { defineComponent } from 'vue';
 import Message from './Message.vue';

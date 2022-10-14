@@ -37,6 +37,9 @@
 </div>
 </template>
 <style >
+.ant-tabs-top > .ant-tabs-nav{
+    margin-bottom: 0px !important;
+}
 .ant-tabs-nav-wrap{
     margin-left: 1.5rem;
 }

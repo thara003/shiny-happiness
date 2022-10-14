@@ -4,16 +4,19 @@
             <Message :strong1="message.strong1" :text="message.text" :strong2="message.strong2"
                 :timeago="message.timeago" :listitem="message.listitem" :button="message.button"
                 :upload="message.upload" :strike="message.strike" :src="message.src" :status = "message.status" :display="message.display"/>
-            <hr class ="mx-6"/>
+            <hr class ="mx-6 color"/>
         </div>
         <Skeleton class="my-4 px-6"/>
-        <hr class="mx-6" />
+        <hr class="mx-6 color" />
         <Skeleton class="mt-4 px-6"/>
     </div>
 </template>
 <style>
 .bg-color {
     background-color: #fdf7f2;
+}
+.color {
+    border-color: #efeeee;
 }
 </style>
 <script>

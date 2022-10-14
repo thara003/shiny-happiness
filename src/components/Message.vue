@@ -14,8 +14,8 @@
     <span class="font-medium text-black ">RT</span>
    </div>
     <div class="px-3">
-      <span class="text-base"> <strong>{{strong1}} </strong>{{text}}<strong>{{strong2}}</strong></span>
-      <span class="flex text-slate-500">{{timeago}}<li class="h-1 w-1 rounded-full bg-slate-400 mt-2 mx-1"
+      <span class="text-base"> <strong>{{strong1}} </strong><span class="font-medium">{{text}}</span><strong>{{strong2}}</strong></span>
+      <span class="flex text-color font-semibold">{{timeago}}<li class="h-1 w-1 rounded-full bg-slate-400 mt-2 mx-1"
           v-show="listitem"></li>
         {{listitem}}</span>
       <Button text="Accept" color="black" v-if="button" />
@@ -28,6 +28,9 @@
   </div>
 </template>
 <style scoped>
+.text-color {
+  color: #b2ada9;
+}
 .bg-color {
   background-color: #f2d1b0;
 }

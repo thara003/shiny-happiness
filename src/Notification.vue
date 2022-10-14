@@ -1,8 +1,8 @@
 <template>
-      <div class = "m-20 lg:mt-80 box-border w-[28rem] rounded-2xl bg-white shadow-md">
+      <div class = "m-20 lg:mt-80 2xl:m-10 box-border w-[30rem] rounded-2xl bg-white shadow-md">
     <div class="flex mx-4 m-2 pt-6 p-3">
         <h2 class="w-2/3 text-2xl font-extrabold ">Notifications</h2>
-        <div class="w-1/3 flex justify-end items-centre">
+        <div class="w-1/3 flex justify-end">
             <a class="text-black font-semibold underline mt-1">Mark all as read</a>
         </div>
     </div>
@@ -21,14 +21,14 @@
                 </span>
                 <span class="ml-1 text-s font-semibold rounded px-2 py-0.5" :class="[activeKey === '2' ? 'bg-black text-white' : 'bg-slate-200 text-slate-400']">6</span>
             </template>
-            Content of Tab Pane 2
+            <div class="h-[44rem] flex items-center justify-center"><span class="p-4 text-semibold">Under construction</span></div>
         </a-tab-pane>
         <a-tab-pane key="3"><template #tab>
                 <span class="text-slate-500" :class="[activeKey === '3' ? 'selected-tab' : '']">
                     Archive
                 </span>
             </template>
-            Content of Tab Pane 3
+            <div class="h-[44rem] flex items-center justify-center"><span class="p-4 text-semibold">Under construction</span></div>
         </a-tab-pane>
         <template #rightExtra>
             <setting-outlined :style="{fontSize: '20px', color:'rgb(148 163 184)', margin: '1rem', marginRight: '1.5rem'}" />

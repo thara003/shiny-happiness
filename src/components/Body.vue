@@ -1,9 +1,10 @@
 <template>
-    <div class="px-4 mb-8">
+    <div class="px-6 mb-8">
+        <!-- change the background if key is 1 and 2 -->
         <div v-for="message in messages" v-bind:key="message.id">
             <Message :strong1="message.strong1" :text="message.text" :strong2="message.strong2"
                 :timeago="message.timeago" :listitem="message.listitem" :button="message.button"
-                :upload="message.upload" :strike="message.strike" :src="message.src" :status = "message.status"/>
+                :upload="message.upload" :strike="message.strike" :src="message.src" :status = "message.status" :display="message.display"/>
             <hr class="my-3" />
         </div>
         <Skeleton />
@@ -40,7 +41,7 @@ export default defineComponent ({
                     strong2: 'Tennis List',
                     timeago: '4h ago ',
                     listitem: 'Hobby List',
-                    src: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDZ8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60',
+                    display: "2",
                 },
                 {
                     id: 3,
@@ -70,7 +71,7 @@ export default defineComponent ({
                     timeago: '4h ago ',
                     listitem: 'Hobby List',
                     strike: true,
-                    src: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60',
+                    display: "5",
                 },
                 {
                     id: 6,
